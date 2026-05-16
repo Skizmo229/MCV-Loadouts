@@ -2219,11 +2219,11 @@
 
 					"body"
 					{
-						"accessory_none"		"0"
+						"accessory_none"	"0"
 						"accessory_badge_nva"	"1"
 						"accessory_badge_vc"	"2"
 						"accessory_badge_star"	"3"
-					}					
+					}
 				}					
 				"hat_nva2"
 				{

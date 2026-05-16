@@ -574,7 +574,7 @@
 			"weapon_m7_bayonet"		"all"
 			"weapon_m1942" 			"all"
 			"weapon_shovel_us"      "all"
-			"weapon_m1905_bayonet"	"weapon_m1g,weapon_m1903,weapon_m37"
+			"weapon_m1905_bayonet"	"weapon_m1g,weapon_m1903,weapon_m37,weapon_m1897"
 			"weapon_crowbar"		"all"
 			"weapon_fists"			"all"
 		}
@@ -583,7 +583,7 @@
 			"weapon_ak47_bayonet"	"all"
 			"weapon_sickle"      	"all"
 			"weapon_shovel_vc"      "all"
-			"weapon_type30_bayonet"	"weapon_m38,weapon_kar98k,weapon_m1897"
+			"weapon_type30_bayonet"	"weapon_m38,weapon_kar98k,weapon_m37,weapon_m1897"
 			"weapon_crowbar"		"all"
 			"weapon_fists"			"all"
 		}
@@ -1111,10 +1111,10 @@
 				{
 					"model"		"models\player\hats\hat_nva5.mdl"
 					"skins"		"0,1,2,3,4"
-					
+
 					"body"
 					{
-						"accessory_none"		"0"
+						"accessory_none"	"0"
 						"accessory_badge_nva"	"1"
 						"accessory_badge_vc"	"2"
 						"accessory_badge_star"	"3"

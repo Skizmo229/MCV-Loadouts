@@ -1450,10 +1450,10 @@
 				{
 					"model"		"models\player\hats\hat_nva5.mdl"
 					"skins"		"0,1,2,3,4"
-					
+
 					"body"
 					{
-						"accessory_none"		"0"
+						"accessory_none"	"0"
 						"accessory_badge_nva"	"1"
 						"accessory_badge_vc"	"2"
 						"accessory_badge_star"	"3"
@@ -1629,6 +1629,185 @@
 					"index"		"5"
 				}
 			}
-		}		
+		}
+	}
+
+	// per-team bodygroup data
+	// bodygroup rules:	If class block has "bodygroup" and/or "bodygroup_vest" then corresponding value will be used by default.
+	//					If class block has weapon block (ex:. "weapon_m16mine" { "bodygroup" "6" }) then corresponding value will be 
+	//						used if player has mentioned weapon in their loadout, otherwise it will fall back to default above.
+	//					If no default value specified then bodygroup will be set to 0.
+	//					Note that you can use masks when defining weapon blocks, for example: weapon_*_sog will set bodygroup if player has any weapon with the name that ends by "_sog".
+	//						You CANNOT put star before "weapon_". Allowed usage: "weapon_*_something", "weapon_something_*", "weapon_something*", "*_something"
+	//					You can also specify multiple weapons in block name as long as they separated by comma without spaces, for example: "weapon_ak47,weapon_akm" { "bodygroup" "2" }.
+	//					You CANNOT combine masks and multiple names in the same block. You CANNOT have multiple masks in block name.
+	"bodygroups"
+	{
+		"US"
+		{
+			"assault"
+			{
+				"*_m203"
+				{
+					"bodygroup" "4"
+					"bodygroup_vest" "5"
+				}
+				"*_gp25"
+				{
+					"bodygroup" "4"
+					"bodygroup_vest" "5"
+				}
+				"*_xm148"
+				{
+					"bodygroup" "4"
+					"bodygroup_vest" "5"
+				}
+				"weapon_t223,weapon_xm177,weapon_mk4mod0,weapon_stoner63_c,weapon_stoner63_r"
+				{
+					"bodygroup" "2"
+					"bodygroup_vest" "3"
+				}
+				"weapon_*_sog" // any weapon name with _sog postfix
+				{
+					"bodygroup" "2"
+					"bodygroup_vest" "3"
+				}
+				
+				"bodygroup" "0"
+				"bodygroup_vest" "1"
+			}
+			
+			"medic"
+			{
+				"bodygroup" "6"
+				"bodygroup_vest" "7"
+			}
+			
+			"gunner"
+			{
+				"bodygroup" "8"
+				"bodygroup_vest" "9"
+			}
+			
+			"sniper"
+			{
+				"bodygroup" "10"
+				"bodygroup_vest" "11"
+			}
+			
+			"radioman"
+			{
+				"bodygroup" "12"
+				"bodygroup_vest" "13"
+			}
+			
+			"engineer"
+			{
+				"weapon_m16mine"
+				{
+					"bodygroup" "14"
+					"bodygroup_vest" "15"
+				}
+				"weapon_m72"
+				{
+					"bodygroup" "16"
+					"bodygroup_vest" "17"
+				}
+				"weapon_m9a1"
+				{
+					"bodygroup" "18"
+					"bodygroup_vest" "19"
+				}
+				"weapon_m79,weapon_m79_sog,weapon_china_lake"
+				{
+					"bodygroup" "20"
+					"bodygroup_vest" "21"
+				}
+			}
+		}
+		"VC"
+		{
+			"assault"
+			{
+				"weapon_type63,weapon_type63_sog,weapon_svt40,weapon_mas49"
+				{
+					"bodygroup" "0"
+					"bodygroup_vest" "1"
+				}
+				
+				"bodygroup" "2"
+				"bodygroup_vest" "3"
+			}
+			"medic"
+			{
+				"weapon_mat49,weapon_mat49k,weapon_mat49_sog"
+				{
+					"bodygroup" "6"
+					"bodygroup_vest" "7"
+				}
+				"weapon_vz61e,weapon_vz61e_sog"
+				{
+					"bodygroup" "6"
+					"bodygroup_vest" "7"
+				}
+				"weapon_k50m,weapon_m56,weapon_mas38,weapon_mp40,weapon_ppsh41,weapon_pps43"
+				{
+					"bodygroup" "6"
+					"bodygroup_vest" "7"
+				}
+				"weapon_type64,weapon_vz23,weapon_aps,weapon_pm63"
+				{
+					"bodygroup" "6"
+					"bodygroup_vest" "7"
+				}
+				
+				"bodygroup" "4"
+				"bodygroup_vest" "5"
+			}
+			"gunner"
+			{
+				"weapon_rp46,weapon_rpd,weapon_pk,weapon_pkm"
+				{
+					"bodygroup" "8"
+					"bodygroup_vest" "9"
+				}
+				
+				"bodygroup" "10"
+				"bodygroup_vest" "11"
+			}
+			"sniper"
+			{	
+				"bodygroup" "12"
+				"bodygroup_vest" "13"
+			}
+			"radioman"
+			{	
+				"bodygroup" "14"
+				"bodygroup_vest" "15"
+			}
+			"engineer"
+			{
+				"weapon_rg42"
+				{
+					"bodygroup" "16"
+					"bodygroup_vest" "17"
+				}
+				"weapon_rpg7,weapon_rpg2"
+				{
+					"bodygroup" "18"
+					"bodygroup_vest" "19"
+				}
+				"weapon_lpo50"
+				{
+					"bodygroup" "20"
+					"bodygroup_vest" "21"
+				}
+				"weapon_ptrd"
+				{
+					"bodygroup" "22"
+					"bodygroup_vest" "23"
+				}
+			}
+		}
 	}
 }
