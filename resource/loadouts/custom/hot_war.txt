@@ -433,10 +433,12 @@
 				{
 					"slot1"
 					{
+						"weapon_csg"	"#weapon_csg"
 						"weapon_css"	"#weapon_css"
 					}
 					"slot2"
 					{
+						"weapon_csg"	"#weapon_csg"
 						"weapon_css"	"#weapon_css"
 					}
 				}
@@ -483,6 +485,11 @@
 				}
 				"explosive"
 				{
+					"slot1"
+					{
+						"weapon_csg"	"#weapon_csg"
+						"weapon_css"	"#weapon_css"
+					}
 					"slot2"
 					{
 						"weapon_css"	"#weapon_css"
@@ -528,6 +535,11 @@
 				}
 				"explosive"
 				{
+					"slot1"
+					{
+						"weapon_csg"	"#weapon_csg"
+						"weapon_css"	"#weapon_css"
+					}
 					"slot2"
 					{
 						"weapon_css"	"#weapon_css"
@@ -571,6 +583,7 @@
 				{
 					"slot1"
 					{
+						"weapon_csg"	"#weapon_csg"
 						"weapon_css"	"#weapon_css"
 					}
 				}
